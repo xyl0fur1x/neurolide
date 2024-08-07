@@ -6,8 +6,8 @@
     <link rel="shortcut icon" href="img/first-screen/header/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- <link rel="stylesheet" href="css/main.css"> -->
-     <link rel="stylesheet" href="css/style.css">
-
+     <!-- <link rel="stylesheet" href="css/style.css"> -->
+      <link rel="stylesheet" href="css/test.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,36 @@
     <title>NeuroLide</title>
 </head>
 <body>
+
+    <aside class="menu">
+        <h1>What do you want to do?</h1>
+        <a href="#" class="close" onclick="closeModal()">
+            <img src="img/first-screen/close.png" alt="menu" class="small-img" width="30" height="30">
+        </a>
+        <div class="choise">
+            <button class="btn-login" onclick="toLogin()">
+                Login
+            </button>
+            <button class="btn-signup" onclick="toSignup()">
+                Sign up
+            </button>
+        </div>
+        <div class="login">
+            <form >
+                <input type="email" name="" id="" required placeholder="Email">
+                <input type="password" name="" id="" required minlength="8" placeholder="Password">
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+        </div>
+        <div class="signup">
+            <form >
+                <input type="email" name="" id="" required placeholder="Email">
+                <input type="password" name="" id="" required minlength="8" placeholder="Password">
+                <button type="submit" class="btn-login">Sign up</button>
+            </form>
+        </div>
+        <p class="p1" id="msg" style="color: rgb(0, 206, 0);"></p>
+    </aside>
     <section class="first-screen">
         <header>
             <div class="logo">
@@ -25,15 +55,15 @@
             </div>
             <div class="nav">
                 <nav>
-                    <button class="btn btn-login btn-pc">Login</button>
-                    <button class="btn btn-signup btn-pc">Sign up</button>
-                    <a href="#" class="btn-menu btn-mobile">
+                    <button class="btn btn-login btn-pc" onclick="openModal(1)">Login</button>
+                    <button class="btn btn-signup btn-pc" onclick="openModal(2)">Sign up</button>
+                    <a href="#" class="btn-menu btn-mobile" onclick="openModal()">
                         <img src="img/first-screen/header/menu.png" alt="menu" class="small-img" width="30" height="30">
                     </a>
                 </nav>
             </div>
         </header>
-
+        
         <section class="first-screen_content">
             <div class="content_text">
                 <h1>
@@ -49,11 +79,11 @@
                 </div>
                 
                 
-                <button class="btn btn-signup btn-pc">Sign up</button>
+                <button class="btn btn-signup btn-pc" onclick="openModal(2)">Sign up</button>
             </div>
             <div class="content_img">
                 <img src="img/first-screen/fs1.png" alt="reviews">
-                <button class="btn btn-signup btn-mobile">Sign up</button>
+                <button class="btn btn-signup btn-mobile" onclick="openModal(2)">Sign up</button>
             </div>
             <img src="img/first-screen/arrow.png" class="btn-mobile" alt="" width="30" height="auto">
 
@@ -313,4 +343,6 @@
         </div>
     </footer>
 </body>
+<script src="scripts/main.js"></script>
+
 </html>
