@@ -8,8 +8,8 @@ h1, h2, h3, h4, p, a {
     text-decoration: none;
     margin: 0;
     // width: min-content;
-
 }
+
 h1 {
     font-weight: 700;
     font-size: 34px;
@@ -551,12 +551,20 @@ body {
                 align-items: center;
             }
         }
+        a {
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .p2 {
+            font-size: 11px;
+        }
         @media (max-width:795px) {
             .footer_content {
                 flex-direction: column-reverse;
                 align-items: flex-start;
                 gap: 10px;
                 .logo {
+                    gap: 10px;
                     flex-direction: row-reverse;
                 }
             }

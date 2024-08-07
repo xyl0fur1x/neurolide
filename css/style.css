@@ -501,6 +501,13 @@ body footer .footer_content .logo {
   justify-content: center;
   align-items: center;
 }
+body footer a {
+  font-size: 11px;
+  font-weight: 600;
+}
+body footer .p2 {
+  font-size: 11px;
+}
 @media (max-width: 795px) {
   body footer .footer_content {
     flex-direction: column-reverse;
@@ -508,6 +515,7 @@ body footer .footer_content .logo {
     gap: 10px;
   }
   body footer .footer_content .logo {
+    gap: 10px;
     flex-direction: row-reverse;
   }
 }/*# sourceMappingURL=style.css.map */
